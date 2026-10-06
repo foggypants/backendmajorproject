@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f4f8;
+  color: #222;
+}
+
+/* navbar */
+nav {
+  background: #3f51b5;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .brand { color: white; font-weight: bold; font-size: 18px; margin-right: 10px; }
+nav a { color: #e8eaf6; text-decoration: none; }
+nav a:hover { color: white; text-decoration: underline; }
+nav button { margin-left: auto; background: white; color: #3f51b5; }
+
+/* page layout */
+.container { max-width: 750px; margin: 30px auto; padding: 0 15px; }
+h2 { color: #283593; margin-top: 0; }
+
+/* cards and boxes */
+.box, .card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.card h3 { margin: 0 0 6px; }
+.card p { color: #555; margin: 0 0 12px; }
+.card a { color: #3f51b5; font-weight: 600; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+/* login box */
+.auth-box { max-width: 380px; margin: 60px auto; }
+.auth-box h2 { text-align: center; }
+
+/* forms */
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+textarea { min-height: 80px; resize: vertical; }
+
+button {
+  padding: 9px 18px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover { background: #303f9f; }
+nav button:hover { background: #e8eaf6; }
+.auth-box button[type="submit"] { width: 100%; }
+
+/* messages and links */
+.message { color: #c62828; font-size: 14px; }
+.link { color: #3f51b5; cursor: pointer; text-align: center; font-size: 14px; }
+.link:hover { text-decoration: underline; }
+
+/* admin table */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+th { background: #3f51b5; color: white; text-align: left; padding: 12px; }
+td { padding: 12px; border-bottom: 1px solid #eee; }
+tr:nth-child(even) td { background: #fafafa; }
